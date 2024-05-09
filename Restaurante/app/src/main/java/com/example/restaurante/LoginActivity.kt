@@ -20,12 +20,14 @@ class LoginActivity : AppCompatActivity() {
             val username = binding.editUsername.text.toString().trim()
             val password = binding.editPassword.text.toString().trim()
 
-            if (username.equals("abc") && password.equals("123")) {
+            if (username.equals("Enzo") && password.equals("8")) {
+            // Se o nome de usuário for "Enzo" e a senha for "8", inicie a MainActivity
                 val i = Intent(this, MainActivity::class.java)
                 i.putExtra("username", username)
                 startActivity(i)
                 finish()
             } else {
+            // Caso contrário, mostre um Toast informando que houve um erro
                 Toast.makeText(applicationContext, "Errou", Toast.LENGTH_LONG).show()
             }
         }
