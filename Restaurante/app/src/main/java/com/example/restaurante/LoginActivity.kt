@@ -10,9 +10,13 @@ class LoginActivity : AppCompatActivity() {
 //Criação da variável binding que servirá para manipular a tela.
     private lateinit var binding:ActivityLoginBinding
 
+    // O método onCreate é chamado quando a atividade está sendo criada.
+    //A linha super.onCreate(savedInstanceState) chama a implementação da classe pai
+    // para garantir que o ciclo de vida da atividade seja gerenciado corretamente.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // Infla o layout da atividade usando o binding
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
