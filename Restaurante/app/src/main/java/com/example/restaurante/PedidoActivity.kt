@@ -16,11 +16,13 @@ class PedidoActivity : AppCompatActivity() {
         val quantidadeSalada = i.getStringExtra("quantidadeSalada").toString().toInt()
         val quantidadeHamburguer = i.getStringExtra("quantidadeHamburguer").toString().toInt()
 
+        // Cria uma string de texto com o resumo do pedido
         val texto = "Resumo do Pedido\n" +
                 "Pizza: $quantidadePizza Preço: ${quantidadePizza*8}\n" +
                 "Salada: $quantidadeSalada Preço: ${quantidadeSalada*10}\n" +
                 "Hamburguer: $quantidadeHamburguer Preço: ${quantidadeHamburguer*12}\n"
 
+        // Define o texto do elemento de interface de usuário (TextView) chamado "textResumo"
         binding.textResumo.text = texto
 
     }
