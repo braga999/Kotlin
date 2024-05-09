@@ -11,12 +11,13 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
+         // Cria um atraso de 2000 milissegundos (2 segundos)
         Handler(Looper.getMainLooper()).postDelayed({
             val i = intent
             val j = Intent(this,PedidoActivity::class.java)
             j.putExtras(i)
             startActivity(j)
-        },2000)
+        },2000) // Inicia a atividade PedidoActivity após o atraso
 
     }
 }
