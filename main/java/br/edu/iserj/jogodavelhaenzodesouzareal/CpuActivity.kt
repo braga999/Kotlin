@@ -1,6 +1,3 @@
-Claro! Aqui está o código comentado:
-
-```kotlin
 // Declaração do pacote
 package com.example.jogodavelhaenzodesouzareal
 
