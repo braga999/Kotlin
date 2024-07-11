@@ -1,6 +1,3 @@
-Claro, aqui está o código comentado usando `//`:
-
-```kotlin
 package com.example.jogodavelhaenzodesouzareal
 
 import android.content.Intent
