@@ -2,54 +2,89 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    // Define a largura do layout como igual à largura do pai
     android:layout_height="match_parent"
+    // Define a altura do layout como igual à altura do pai
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/estadio"
+    // Define a imagem de fundo do layout
     android:gravity="center"
+    // Centraliza os elementos dentro do layout
     android:orientation="vertical"
+    // Define a orientação dos elementos como vertical
     tools:context=".MenuActivity">
-
+    // Especifica a atividade que usa este layout
 
     <TextView
         android:id="@+id/titleTextView"
+        // ID do TextView
         android:layout_width="wrap_content"
+        // Define a largura do TextView como suficiente para o conteúdo
         android:layout_height="wrap_content"
+        // Define a altura do TextView como suficiente para o conteúdo
         android:layout_marginBottom="32dp"
+        // Define a margem inferior do TextView
         android:text="Jogo da Velha"
+        // Define o texto exibido
         android:textColor="@color/white"
+        // Define a cor do texto
         android:textSize="36sp"
+        // Define o tamanho do texto
         android:textStyle="bold"
+        // Define o estilo do texto como negrito
         app:layout_constraintBottom_toTopOf="@+id/cpuButton"
+        // Restringe a parte inferior ao topo do botão CPU (usado com ConstraintLayout)
         app:layout_constraintEnd_toEndOf="parent"
+        // Restringe o final do TextView ao final do pai (usado com ConstraintLayout)
         app:layout_constraintStart_toStartOf="parent"
+        // Restringe o início do TextView ao início do pai (usado com ConstraintLayout)
         app:layout_constraintTop_toTopOf="parent"
+        // Restringe o topo do TextView ao topo do pai (usado com ConstraintLayout)
         app:layout_constraintVertical_bias="0.2" />
-
+        // Define o viés vertical (usado com ConstraintLayout)
 
     <Button
         android:id="@+id/pvpButton"
+        // ID do botão PvP
         android:layout_width="wrap_content"
+        // Define a largura do botão como suficiente para o conteúdo
         android:layout_height="wrap_content"
+        // Define a altura do botão como suficiente para o conteúdo
         android:layout_marginTop="306dp"
+        // Define a margem superior do botão
         android:backgroundTint="#0000FF"
+        // Define a cor de fundo do botão
         android:text="Jogar PvP"
+        // Define o texto do botão
         android:textColor="#FFFFFF"
+        // Define a cor do texto do botão
         app:layout_constraintEnd_toEndOf="parent"
+        // Restringe o final do botão ao final do pai (usado com ConstraintLayout)
         app:layout_constraintStart_toStartOf="parent"
+        // Restringe o início do botão ao início do pai (usado com ConstraintLayout)
         app:layout_constraintTop_toBottomOf="@+id/cpuButton" />
+        // Restringe o topo do botão ao fundo do botão CPU (usado com ConstraintLayout)
 
     <Button
         android:id="@+id/cpuButton"
+        // ID do botão CPU
         android:layout_width="wrap_content"
+        // Define a largura do botão como suficiente para o conteúdo
         android:layout_height="wrap_content"
+        // Define a altura do botão como suficiente para o conteúdo
         android:layout_marginTop="16dp"
+        // Define a margem superior do botão
         android:backgroundTint="#0000FF"
+        // Define a cor de fundo do botão
         android:text="Jogar CPU"
+        // Define o texto do botão
         android:textColor="#FFFFFF"
+        // Define a cor do texto do botão
         app:layout_constraintEnd_toEndOf="parent"
+        // Restringe o final do botão ao final do pai (usado com ConstraintLayout)
         app:layout_constraintStart_toStartOf="parent"
+        // Restringe o início do botão ao início do pai (usado com ConstraintLayout)
         app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
-
-    /
+        // Restringe o topo do botão ao fundo do TextView título (usado com ConstraintLayout)
 
 </LinearLayout>
