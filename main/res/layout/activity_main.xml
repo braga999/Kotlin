@@ -1,29 +1,55 @@
+Claro! Aqui está o código com comentários usando `//`:
+
+```xml
+// Declaração do documento XML com a versão e codificação
 <?xml version="1.0" encoding="utf-8"?>
+
+// LinearLayout principal com os namespaces necessários
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    // Define a largura do layout para preencher o pai
     android:layout_width="match_parent"
+    // Define a altura do layout para preencher o pai
     android:layout_height="match_parent"
+    // Define o background do layout usando um drawable
     android:background="@drawable/background"
+    // Define a gravidade do conteúdo para o centro
     android:gravity="center"
+    // Define a orientação do layout como vertical
     android:orientation="vertical"
+    // Define o contexto da ferramenta para MainActivity
     tools:context=".MainActivity">
 
+    // TextView para exibir o título "PvP"
     <TextView
+        // Define a largura do TextView para preencher o pai
         android:layout_width="match_parent"
+        // Define a altura do TextView para ajustar ao conteúdo
         android:layout_height="wrap_content"
+        // Define a margem inferior do TextView
         android:layout_marginBottom="400dp"
+        // Define a gravidade do texto para o centro
         android:gravity="center"
+        // Define o texto a ser exibido
         android:text="PvP"
+        // Define a cor do texto
         android:textColor="@color/black"
+        // Define o tamanho do texto
         android:textSize="50sp" />
 
+    // LinearLayout para conter os botões na horizontal
     <LinearLayout
+        // Define a largura do LinearLayout para preencher o pai
         android:layout_width="match_parent"
+        // Define a altura do LinearLayout para ajustar ao conteúdo
         android:layout_height="wrap_content"
+        // Define a gravidade do conteúdo para o centro
         android:gravity="center"
+        // Define a orientação do layout como horizontal
         android:orientation="horizontal">
 
+        // Botão com id buttonZero
         <Button
             android:id="@+id/buttonZero"
             android:layout_width="60dp"
@@ -32,6 +58,7 @@
             android:onClick="buttonClick"
             android:textSize="20sp" />
 
+        // Botão com id buttonUm
         <Button
             android:id="@+id/buttonUm"
             android:layout_width="60dp"
@@ -40,6 +67,7 @@
             android:onClick="buttonClick"
             android:textSize="20sp" />
 
+        // Botão com id buttonDois
         <Button
             android:id="@+id/buttonDois"
             android:layout_width="60dp"
@@ -49,12 +77,14 @@
             android:textSize="20sp" />
     </LinearLayout>
 
+    // LinearLayout para conter os botões na horizontal
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
 
+        // Botão com id buttonTres
         <Button
             android:id="@+id/buttonTres"
             android:layout_width="60dp"
@@ -63,6 +93,7 @@
             android:onClick="buttonClick"
             android:textSize="20sp" />
 
+        // Botão com id buttonQuatro
         <Button
             android:id="@+id/buttonQuatro"
             android:layout_width="60dp"
@@ -71,6 +102,7 @@
             android:onClick="buttonClick"
             android:textSize="20sp" />
 
+        // Botão com id buttonCinco
         <Button
             android:id="@+id/buttonCinco"
             android:layout_width="60dp"
@@ -80,12 +112,14 @@
             android:textSize="20sp" />
     </LinearLayout>
 
+    // LinearLayout para conter os botões na horizontal
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
 
+        // Botão com id buttonSeis
         <Button
             android:id="@+id/buttonSeis"
             android:layout_width="60dp"
@@ -94,6 +128,7 @@
             android:onClick="buttonClick"
             android:textSize="20sp" />
 
+        // Botão com id buttonSete
         <Button
             android:id="@+id/buttonSete"
             android:layout_width="60dp"
@@ -102,6 +137,7 @@
             android:onClick="buttonClick"
             android:textSize="20sp" />
 
+        // Botão com id buttonOito
         <Button
             android:id="@+id/buttonOito"
             android:layout_width="60dp"
@@ -112,3 +148,6 @@
     </LinearLayout>
 
 </LinearLayout>
+```
+
+Se precisar de mais alguma coisa, estou à disposição!
