@@ -1,37 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Define a raiz do layout como um LinearLayout com orientação vertical -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".CpuActivity">
+    android:background="@drawable/background" <!-- Define o background do layout -->
+    android:gravity="center" <!-- Centraliza o conteúdo no layout -->
+    android:orientation="vertical" <!-- Define a orientação vertical -->
+    tools:context=".CpuActivity"> <!-- Contexto usado para ferramentas -->
 
+    <!-- TextView para exibir o texto "CPU" -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="CPU"
-        android:textColor="@color/black"
-        android:textSize="50sp"
-        android:layout_marginBottom="400dp"/>
+        android:layout_width="match_parent" <!-- Largura do TextView é igual à largura do pai -->
+        android:layout_height="wrap_content" <!-- Altura do TextView é ajustada ao conteúdo -->
+        android:gravity="center" <!-- Centraliza o texto -->
+        android:text="CPU" <!-- Define o texto como "CPU" -->
+        android:textColor="@color/black" <!-- Define a cor do texto como preta -->
+        android:textSize="50sp" <!-- Define o tamanho do texto -->
+        android:layout_marginBottom="400dp"/> <!-- Define uma margem inferior -->
 
+    <!-- Primeiro LinearLayout horizontal para os botões -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
+        android:layout_width="match_parent" <!-- Largura do LinearLayout é igual à largura do pai -->
+        android:layout_height="wrap_content" <!-- Altura do LinearLayout é ajustada ao conteúdo -->
+        android:gravity="center" <!-- Centraliza o conteúdo -->
+        android:orientation="horizontal"> <!-- Define a orientação horizontal -->
 
+        <!-- Botão com id buttonZero -->
         <Button
             android:id="@+id/buttonZero"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_margin="5dp"
-            android:onClick="buttonClick"
-            android:textSize="20sp" />
+            android:layout_width="60dp" <!-- Largura do botão -->
+            android:layout_height="60dp" <!-- Altura do botão -->
+            android:layout_margin="5dp" <!-- Margem ao redor do botão -->
+            android:onClick="buttonClick" <!-- Define o método a ser chamado quando o botão é clicado -->
+            android:textSize="20sp" /> <!-- Define o tamanho do texto do botão -->
 
+        <!-- Botão com id buttonUm -->
         <Button
             android:id="@+id/buttonUm"
             android:layout_width="60dp"
@@ -40,6 +45,7 @@
             android:onClick="buttonClick"
             android:textSize="20sp" />
 
+        <!-- Botão com id buttonDois -->
         <Button
             android:id="@+id/buttonDois"
             android:layout_width="60dp"
@@ -49,12 +55,14 @@
             android:textSize="20sp" />
     </LinearLayout>
 
+    <!-- Segundo LinearLayout horizontal para os botões -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
 
+        <!-- Botão com id buttonTres -->
         <Button
             android:id="@+id/buttonTres"
             android:layout_width="60dp"
@@ -63,6 +71,7 @@
             android:onClick="buttonClick"
             android:textSize="20sp" />
 
+        <!-- Botão com id buttonQuatro -->
         <Button
             android:id="@+id/buttonQuatro"
             android:layout_width="60dp"
@@ -71,6 +80,7 @@
             android:onClick="buttonClick"
             android:textSize="20sp" />
 
+        <!-- Botão com id buttonCinco -->
         <Button
             android:id="@+id/buttonCinco"
             android:layout_width="60dp"
@@ -80,12 +90,14 @@
             android:textSize="20sp" />
     </LinearLayout>
 
+    <!-- Terceiro LinearLayout horizontal para os botões -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
 
+        <!-- Botão com id buttonSeis -->
         <Button
             android:id="@+id/buttonSeis"
             android:layout_width="60dp"
@@ -94,6 +106,7 @@
             android:onClick="buttonClick"
             android:textSize="20sp" />
 
+        <!-- Botão com id buttonSete -->
         <Button
             android:id="@+id/buttonSete"
             android:layout_width="60dp"
@@ -102,13 +115,8 @@
             android:onClick="buttonClick"
             android:textSize="20sp" />
 
+        <!-- Botão com id buttonOito -->
         <Button
             android:id="@+id/buttonOito"
             android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_margin="5dp"
-            android:onClick="buttonClick"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-</LinearLayout>
+           
